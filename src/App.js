@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { EAProvider } from './components/ElectroniaTodo/EAContext';
+import EAUserControl from './components/ElectroniaTodo/EAUserControl';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <EAProvider>
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-md-12'>
+            <EAUserControl header="Electronia Assesment" />
+          </div>
+        </div>
+      </div>
+  </EAProvider>
   );
 }
-
 export default App;
