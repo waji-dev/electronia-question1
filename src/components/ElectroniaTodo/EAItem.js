@@ -30,7 +30,7 @@ const EAItem = ({ item, index }) => {
       </span>
       </td>
       <td>
-      {item.completed==false &&  <button className='btn btn-success m-2' onClick={() => toggleItem(index)}>Completed</button> }
+      {item.completed===false &&  <button className='btn btn-success m-2' onClick={() => toggleItem(index)}>Completed</button> }
      
       { isEditing &&    <button 
       className='btn btn-danger' 

@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, {useContext } from 'react';
 import { EAContext } from './EAContext';
 
 const EAFilter  = () => {
-  const { setFilterValue,filterByStatus } = useContext(EAContext);
+  const { setFilterValue } = useContext(EAContext);
   const handleFilterChange=(e)=>{
     setFilterValue(e.target.value);
   }
